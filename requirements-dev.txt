@@ -1,0 +1,3 @@
+MagicMock
+pytest
+pytest-asyncio

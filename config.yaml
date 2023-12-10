@@ -50,7 +50,7 @@ items:
               ports:
                 - containerPort: 9091
             - name: api
-              image: europe-west6-docker.pkg.dev/distalog/temp-api/api:latest
+              image: europe-west6-docker.pkg.dev/distalog/temp-api/api:latest # In reality this should be an explicit version
               imagePullPolicy: Always
               ports:
                 - containerPort: 5000

@@ -1,22 +1,19 @@
 [project]
 name = "temp_api"
-version = "2023.12.2"
+version = "2023.12.11"
 description = "Temperature API server."
 requires-python = ">=3.11"
-
-dependencies = [
-    "uvicorn",
-    "fastapi",
-    "prometheus_client",
-    "requests",
-    "types-requests",
-]
+dynamic = ["dependencies"]
 
 [project.scripts]
 temp_api = "temp_api.main:_main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+optional-dependencies = { dev = { file = ["requirements-dev.txt"] } }
 
 [tool.mypy]
 follow_imports = "normal"

@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Build a new docker image
+
 set -e -x
 
 LOCATION=europe-west6-docker.pkg.dev
